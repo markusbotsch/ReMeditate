@@ -1,0 +1,148 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+  --accent-color: #3BA04C;
+}
+
+.svg-underline {
+  position: relative
+} 
+
+.svg-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: -1rem;
+  right: -1rem;
+  height: 1.5rem;
+  z-index: -1;
+  background-image: url('../underline.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.daily-quote {
+  margin: 2rem 0;
+}
+
+.quotee {
+  font-style: italic;
+}
+
+.timer-selection {
+  margin: 30px 0;
+}
+
+.timer-button {
+  background-color: #292929;
+  padding: 10px 30px;
+  margin: 5px;
+  color: white;
+  border: 1px solid var(--accent-color);
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+}
+
+.active {
+  background-color: var(--accent-color);
+}
+
+.timer {
+  position: relative;
+  min-width: 380px;
+  margin: 100px auto;
+  /* background-color: red; */
+}
+
+
+.timer-circle {
+  transition: all 1s linear;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+.timer-text {
+  font-family: 'Roboto Mono', monospace;
+  /* font-family: 'Merriweather', 'Times New Roman', Times, serif; */
+  font-size: 3rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.timer-text button {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 700; 
+  color: var(--accent-color);
+  background: transparent;
+  padding: 10px 30px;
+  border: none;
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+
+.journey-view {
+  padding: 20px 0;
+}
+
+.react-calendar {
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+  color: white !important;
+  margin: 0 auto;
+  background: transparent;
+  border: none;
+}
+
+.react-calendar__tile {
+  color: white;
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+}
+
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color: #e6e6e6;
+  color: black;
+}
+
+.react-calendar__navigation button {
+  font-family: 'Merriweather', 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.react-calendar__tile--active {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  background: transparent;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: var(--accent-color);
+}
+
+.react-calendar .highlight {
+  background-color: var(--accent-color);
+  border: 2px solid black;
+  /* border-radius: 50%; */
+  /* padding: 0px; */
+  /* margin: 5px; */
+}
+
